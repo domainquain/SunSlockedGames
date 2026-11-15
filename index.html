@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sunslocked Games</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="vanta" aria-hidden="true"><i class="cloud c1"></i><i class="cloud c2"></i><i class="cloud c3"></i></div>
+  <div class="glow" aria-hidden="true"></div>
+  <canvas id="sparkles" aria-hidden="true"></canvas>
+
+  <header class="hero">
+    <svg class="mascot" viewBox="-70 -70 140 140" aria-hidden="true">
+      <g class="rays"><polygon points="43.4,-7.1 64.0,0.0 43.4,7.1" fill="#ff8a00" stroke="#1b1200" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/><polygon points="41.2,15.6 55.4,32.0 34.0,27.9" fill="#ff8a00" stroke="#1b1200" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/><polygon points="27.9,34.0 32.0,55.4 15.6,41.2" fill="#ff8a00" stroke="#1b1200" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/><polygon points="7.1,43.4 0.0,64.0 -7.1,43.4" fill="#ff8a00" stroke="#1b1200" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/><polygon points="-15.6,41.2 -32.0,55.4 -27.9,34.0" fill="#ff8a00" stroke="#1b1200" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/><polygon points="-34.0,27.9 -55.4,32.0 -41.2,15.6" fill="#ff8a00" stroke="#1b1200" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/><polygon points="-43.4,7.1 -64.0,0.0 -43.4,-7.1" fill="#ff8a00" stroke="#1b1200" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/><polygon points="-41.2,-15.6 -55.4,-32.0 -34.0,-27.9" fill="#ff8a00" stroke="#1b1200" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/><polygon points="-27.9,-34.0 -32.0,-55.4 -15.6,-41.2" fill="#ff8a00" stroke="#1b1200" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/><polygon points="-7.1,-43.4 -0.0,-64.0 7.1,-43.4" fill="#ff8a00" stroke="#1b1200" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/><polygon points="15.6,-41.2 32.0,-55.4 27.9,-34.0" fill="#ff8a00" stroke="#1b1200" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/><polygon points="34.0,-27.9 55.4,-32.0 41.2,-15.6" fill="#ff8a00" stroke="#1b1200" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/></g>
+      <g class="face"><circle r="40" fill="#ffe14d" stroke="#1b1200" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="-23.2" cy="10.5" r="6.3" fill="#ff8fab" opacity=".8"/><circle cx="23.2" cy="10.5" r="6.3" fill="#ff8fab" opacity=".8"/><g stroke="#1b1200" stroke-linejoin="round" stroke-linecap="round"><rect x="-32.6" y="-14.7" width="29.5" height="21.1" rx="7.4" fill="#1b1200" stroke-width="3"/><rect x="3.2" y="-14.7" width="29.5" height="21.1" rx="7.4" fill="#1b1200" stroke-width="3"/><path d="M-3.2 -6.3H3.2" stroke-width="4.2" fill="none"/></g><path d="M-25.3 -10.5l8.4 0M10.5 -10.5l8.4 0" stroke="#fff" stroke-width="3.2" stroke-linecap="round" opacity=".85"/><path d="M-13.7 16.8Q0 29.5 13.7 16.8" fill="none" stroke="#1b1200" stroke-width="4.2" stroke-linecap="round"/></g>
+    </svg>
+    <h1 class="logo" aria-label="Sunslocked Games"><span class="word">SUNSLOCKED</span><span class="chip">GAMES</span></h1>
+  </header>
+
+  <div class="searchbar">
+    <label class="search">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5 21 21"/></svg>
+      <input id="search" type="search" placeholder="Search games" autocomplete="off" aria-label="Search games">
+    </label>
+  </div>
+
+  <main class="shell"><section id="games" class="grid" aria-live="polite"></section></main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.clouds.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
